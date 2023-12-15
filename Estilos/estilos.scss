@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat+Alternates:wght@300500&family=Poppins:wght@300&family=Slabo+27px&display=swap') 
+
+
+//Paleta de colores + font principal//
+;$colorbase:rgb(180, 46, 180);
+$colordelafuente: black;
+$colordelfooter: rgb(241, 220, 234);
+$colorsecundario:grey;
+$font1: Poppins, sans-serif;
+
+//Fuente universal
+* {font-family: $font1;
+} 
+
+/*Estilos del INDEX/HOME*/
+
+a:hover {
+    background-color:$colorbase;
+}
+
+
+/*Estilos de Contacto*/
+/*Form*/
+
+h1 {font-family: $font1;
+color: $colorsecundario;
+margin-top: 70px;
+font-size: 25px;
+text-align: center;
+}

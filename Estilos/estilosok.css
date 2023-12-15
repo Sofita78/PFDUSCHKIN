@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat+Alternates:wght@300;500&family=Poppins:wght@300&family=Slabo+27px&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+
+/*Estilos del INDEX/HOME*/
+body {
+    background-color: rgb(180, 46, 180);
+    background-image: linear-gradient(rgb(180, 46, 180), white);
+    background-image: linear-gradient(to right, rgb(180, 46, 180), white);
+}
+
+/*Nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    transform: rotateY(0deg);
+    transition: all 5s;
+}
+
+.navbar-brand:hover {
+    transform: rotateY(360deg);
+
+}
+
+a {
+    list-style: none;
+    transition: background-color 0.5s;
+}
+
+a:hover {
+    background-color: rgb(180, 46, 180);
+}
+
+
+/*Carrusel + Cards*/
+.carrusel {
+    padding: 80px;
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 35%;
+    margin-bottom: 20%;
+}
+
+/*img logo publicitario*/
+.imgs-fluid {
+    width: 375px;
+    height: 345px;
+    margin-left: 400px;
+    margin-top: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/*Estilos de Contacto*/
+/*Form*/
+.mb-3 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-top: 70px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #ccc;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+}
+
+to {
+    opacity: 1;
+}
+
+
+.img5 {
+    margin-top: 25px;
+    width: 15rem;
+    margin-left: 70px;
+    transform: rotateX(0deg);
+    transition: all 5s;
+}
+
+.img5:hover {
+    transform: rotateX(360deg);
+}
+
+/*Estilos de Herramientas/SkinCare*/
+
+.img7 {
+    margin-top: 25px;
+    width: 15rem;
+    margin-left: 25px;
+    margin-bottom: 35px;
+    transform: rotateX(0deg);
+    transition: all 5s;
+}
+
+.img7:hover {
+    transform: rotateX(360deg);
+}
+
+/*Footer styles*/
+.footer {
+    background-color: #414141;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+}
+
+.footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .icons {
+    margin-top: 25px;
+}
+
+.footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: violet;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+    width: 30%;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color:violet;
+    text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+    width: 35%;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer h2 span {
+    color:violet;
+}
+
+.footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .menu a:hover {
+    color:violet;
+}
+
+.footer .name {
+    color:violet;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        font-size: 14px;
+    }
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+}
